@@ -11,7 +11,7 @@ export default function signIn() {
     await page.getByPlaceholder("password").fill("wyZVDyQgaTgyp53n");
 
     await page.click("[data-cy='submit-button']");
-    await expect(page).toHaveURL("http://test-manual-ui.afront.io/campaigns");
+    await expect(page).toHaveURL("http://test-manual-ui.afront.io/campaigns/test");
     
   });
 }
